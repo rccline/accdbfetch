@@ -1,0 +1,20 @@
+Package: accdbfetch
+Title: A Package to Import tables from MS Access
+Version: 0.0.1
+Authors@R: 
+    person("Robert", "Cline", , "rccline@fastmail.fm", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0003-4758-3111"))
+Description: accdbfetch connects to an MS Access database using a file path supplied by user.   
+    After connection to the db is established, the function imports and tidys the imported tables and adds them to the R environment.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    dbplyr,
+    dplyr,
+    magrittr,
+    odbc,
+    RODBC,
+    stringr,
+    tibble
