@@ -16,5 +16,5 @@ tables from Access application.
 Imports tables from MS Access using supplied path to Access DB.
 }
 \examples{
-accdb_fetch("F:/D_Documents/_CheyenneCounty/NORSTAR/S Johnson Database/GTLS_SoJohnson Ver 1.0.accdb")
+accdb_fetch("/dev/dev-access.accdb")
 }

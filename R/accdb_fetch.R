@@ -3,7 +3,7 @@
 #' @param x path to AccessDB
 #' @return tables from Access application.
 #' @examples
-#' accdb_fetch("F:/D_Documents/_CheyenneCounty/NORSTAR/S Johnson Database/GTLS_SoJohnson Ver 1.0.accdb")
+#' accdb_fetch("/dev/dev-access.accdb")
 accdb_fetch <- function(x) {
   dbpath <- x
   ch0<- RODBC::odbcDriverConnect(paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=",dbpath ))
