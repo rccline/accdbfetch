@@ -4,6 +4,7 @@
 #' @return tables from Access application.
 #' @examples
 #' accdb_fetch("/dev/dev-access.accdb")
+#' @export
 accdb_fetch <- function(x) {
   dbpath <- x
   ch0<- RODBC::odbcDriverConnect(paste0("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=",dbpath ))
