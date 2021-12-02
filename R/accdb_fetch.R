@@ -25,7 +25,7 @@ accdb_fetch <- function(x) {
     dplyr::select(-FirstName, -LastName) %>%
     dplyr::relocate(Lessor, .after=LessorID) %>%
     dplyr::mutate(Lessor=stringr::str_remove(string=Lessor, pattern = "^NA\\s")) %>%
-    dplyr::mutate(Lessor=str_remove(string=Lessor, pattern = "^NA$"))
+    dplyr::mutate(Lessor=stringr::str_remove(string=Lessor, pattern = "^NA$"))
 
 
   counties <- RODBC::sqlFetch(ch0, "tblCounties")
