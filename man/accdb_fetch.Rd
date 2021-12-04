@@ -16,5 +16,7 @@ tables from Access application.
 Imports tables from MS Access using supplied path to Access DB.
 }
 \examples{
+\dontrun{
 accdb_fetch("/dev/dev-access.accdb")
+}
 }

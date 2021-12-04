@@ -3,7 +3,9 @@
 #' @param x path to AccessDB
 #' @return tables from Access application.
 #' @examples
+#' \dontrun{
 #' accdb_fetch("/dev/dev-access.accdb")
+#' }
 #' @export
 accdb_fetch <- function(x) {
   dbpath <- x
